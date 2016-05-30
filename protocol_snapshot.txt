@@ -1,0 +1,1654 @@
+Minecraft version: 16w21b
+Protocol version: 203
+
+############## CLIENTBOUND PACKETS ##############
+
+************ PLAY - Clientbound #0x0 ************
+{
+    a0.d(this.a);
+    a0.a(this.b);
+    a0.writeByte(this.k);
+    a0.writeDouble(this.c);
+    a0.writeDouble(this.d);
+    a0.writeDouble(this.e);
+    a0.writeByte(this.i);
+    a0.writeByte(this.j);
+    a0.writeInt(this.l);
+    a0.writeShort(this.f);
+    a0.writeShort(this.g);
+    a0.writeShort(this.h);
+}
+
+************ PLAY - Clientbound #0x1 ************
+{
+    a0.d(this.a);
+    a0.writeDouble(this.b);
+    a0.writeDouble(this.c);
+    a0.writeDouble(this.d);
+    a0.writeShort(this.e);
+}
+
+************ PLAY - Clientbound #0x2 ************
+{
+    a0.d(this.a);
+    a0.writeByte(this.e);
+    a0.writeDouble(this.b);
+    a0.writeDouble(this.c);
+    a0.writeDouble(this.d);
+}
+
+************ PLAY - Clientbound #0x3 ************
+{
+    a0.d(this.a);
+    a0.a(this.b);
+    a0.writeByte(this.c & 255);
+    a0.writeDouble(this.d);
+    a0.writeDouble(this.e);
+    a0.writeDouble(this.f);
+    int i0 = this.j;
+    a0.writeByte(i0);
+    int i1 = this.k;
+    a0.writeByte(i1);
+    int i2 = this.l;
+    a0.writeByte(i2);
+    a0.writeShort(this.g);
+    a0.writeShort(this.h);
+    a0.writeShort(this.i);
+    this.m.a(a0);
+}
+
+************ PLAY - Clientbound #0x4 ************
+{
+    a0.d(this.a);
+    a0.a(this.b);
+    a0.a(this.e);
+    a0.a(this.c);
+    a0.writeByte(this.d.b());
+}
+
+************ PLAY - Clientbound #0x5 ************
+{
+    a0.d(this.a);
+    a0.a(this.b);
+    a0.writeDouble(this.c);
+    a0.writeDouble(this.d);
+    a0.writeDouble(this.e);
+    int i0 = this.f;
+    a0.writeByte(i0);
+    int i1 = this.g;
+    a0.writeByte(i1);
+    this.h.a(a0);
+}
+
+************ PLAY - Clientbound #0x6 ************
+{
+    a0.d(this.a);
+    a0.writeByte(this.b);
+}
+
+************ PLAY - Clientbound #0x7 ************
+{
+    a0.d(this.a.size());
+    Object a1 = this.a.entrySet().iterator();
+    while(((java.util.Iterator)a1).hasNext())
+    {
+        Object a2 = ((java.util.Iterator)a1).next();
+        a0.a(((nr)((java.util.Map$Entry)a2).getKey()).e);
+        a0.d(((Integer)((java.util.Map$Entry)a2).getValue()).intValue());
+    }
+}
+
+************ PLAY - Clientbound #0x8 ************
+{
+    a0.d(this.a);
+    a0.a(this.b);
+    a0.writeByte(this.c);
+}
+
+************ PLAY - Clientbound #0x9 ************
+{
+    a0.a(this.a);
+    int i = (byte)this.b;
+    a0.writeByte(i);
+    a0.a(this.c);
+}
+
+************ PLAY - Clientbound #0xa ************
+{
+    a0.a(this.a);
+    a0.writeByte(this.b);
+    a0.writeByte(this.c);
+    a0.d(ake.a(this.d) & 4095);
+}
+
+************ PLAY - Clientbound #0xb ************
+{
+    a0.a(this.a);
+    a0.d(ake.i.a((Object)this.b));
+}
+
+************ PLAY - Clientbound #0xc ************
+{
+    a0.a(this.a);
+    a0.a((Enum)this.b);
+    switch(fy$1.a[this.b.ordinal()]){
+        case 6: {
+            a0.writeByte(this.j());
+            break;
+        }
+        case 5: {
+            a0.a((Enum)this.e);
+            a0.a((Enum)this.f);
+            break;
+        }
+        case 4: {
+            a0.a(this.c);
+            break;
+        }
+        case 3: {
+            a0.writeFloat(this.d);
+            break;
+        }
+        case 2: {
+            break;
+        }
+        case 1: {
+            a0.a(this.c);
+            a0.writeFloat(this.d);
+            a0.a((Enum)this.e);
+            a0.a((Enum)this.f);
+            a0.writeByte(this.j());
+            break;
+        }
+    }
+}
+
+************ PLAY - Clientbound #0xd ************
+{
+    a0.writeByte(this.a.a());
+}
+
+************ PLAY - Clientbound #0xe ************
+{
+    a0.d(this.a.length);
+    String[] a1 = this.a;
+    int i = a1.length;
+    int i0 = 0;
+    while(i0 < i)
+    {
+        a0.a(a1[i0]);
+        i0 = i0 + 1;
+    }
+}
+
+************ PLAY - Clientbound #0xf ************
+{
+    a0.a(this.a);
+    int i = this.b;
+    a0.writeByte(i);
+}
+
+************ PLAY - Clientbound #0x10 ************
+{
+    a0.writeInt(this.a.a);
+    a0.writeInt(this.a.b);
+    a0.d(this.b.length);
+    gc$a[] a1 = this.b;
+    int i = a1.length;
+    int i0 = 0;
+    while(i0 < i)
+    {
+        gc$a a2 = a1[i0];
+        int i1 = a2.b();
+        a0.writeShort(i1);
+        a0.d(ake.i.a((Object)a2.c()));
+        i0 = i0 + 1;
+    }
+}
+
+************ PLAY - Clientbound #0x11 ************
+{
+    a0.writeByte(this.a);
+    int i = this.b;
+    a0.writeShort(i);
+    a0.writeBoolean(this.c);
+}
+
+************ PLAY - Clientbound #0x12 ************
+{
+    a0.writeByte(this.a);
+}
+
+************ PLAY - Clientbound #0x13 ************
+{
+    a0.writeByte(this.a);
+    a0.a(this.b);
+    a0.a(this.c);
+    a0.writeByte(this.d);
+    if (this.b.equals((Object)"EntityHorse"))
+    {
+        a0.writeInt(this.e);
+    }
+}
+
+************ PLAY - Clientbound #0x14 ************
+{
+    a0.writeByte(this.a);
+    a0.writeShort(this.b.length);
+    ady[] a1 = this.b;
+    int i = a1.length;
+    int i0 = 0;
+    while(i0 < i)
+    {
+        a0.a(a1[i0]);
+        i0 = i0 + 1;
+    }
+}
+
+************ PLAY - Clientbound #0x15 ************
+{
+    a0.writeByte(this.a);
+    a0.writeShort(this.b);
+    a0.writeShort(this.c);
+}
+
+************ PLAY - Clientbound #0x16 ************
+{
+    a0.writeByte(this.a);
+    a0.writeShort(this.b);
+    a0.a(this.c);
+}
+
+************ PLAY - Clientbound #0x17 ************
+{
+    a0.d(adw.a(this.a));
+    a0.d(this.b);
+}
+
+************ PLAY - Clientbound #0x18 ************
+{
+    a0.a(this.a);
+    a0.writeBytes((io.netty.buffer.ByteBuf)this.b);
+}
+
+************ PLAY - Clientbound #0x19 ************
+{
+    a0.a(this.a);
+    a0.a((Enum)this.b);
+    a0.writeInt(this.c);
+    a0.writeInt(this.d);
+    a0.writeInt(this.e);
+    a0.writeFloat(this.f);
+    a0.writeFloat(this.g);
+}
+
+************ PLAY - Clientbound #0x1a ************
+{
+    a0.a(this.a);
+}
+
+************ PLAY - Clientbound #0x1b ************
+{
+    a0.writeInt(this.a);
+    int i = this.b;
+    a0.writeByte(i);
+}
+
+************ PLAY - Clientbound #0x1c ************
+{
+    a0.writeFloat((float)this.a);
+    a0.writeFloat((float)this.b);
+    a0.writeFloat((float)this.c);
+    a0.writeFloat(this.d);
+    a0.writeInt(this.e.size());
+    int i = (int)this.a;
+    int i0 = (int)this.b;
+    int i1 = (int)this.c;
+    Object a1 = this.e.iterator();
+    while(((java.util.Iterator)a1).hasNext())
+    {
+        cl a2 = (cl)((java.util.Iterator)a1).next();
+        int i2 = a2.p() - i;
+        int i3 = a2.q() - i0;
+        int i4 = a2.r() - i1;
+        a0.writeByte(i2);
+        a0.writeByte(i3);
+        a0.writeByte(i4);
+    }
+    a0.writeFloat(this.f);
+    a0.writeFloat(this.g);
+    a0.writeFloat(this.h);
+}
+
+************ PLAY - Clientbound #0x1d ************
+{
+    a0.writeInt(this.a);
+    a0.writeInt(this.b);
+}
+
+************ PLAY - Clientbound #0x1e ************
+{
+    a0.writeByte(this.b);
+    a0.writeFloat(this.c);
+}
+
+************ PLAY - Clientbound #0x1f ************
+{
+    a0.d(this.a);
+}
+
+************ PLAY - Clientbound #0x20 ************
+{
+    a0.writeInt(this.a);
+    a0.writeInt(this.b);
+    a0.writeBoolean(this.f);
+    a0.d(this.c);
+    a0.d(this.d.length);
+    a0.writeBytes(this.d);
+    a0.d(this.e.size());
+    Object a1 = this.e.iterator();
+    while(((java.util.Iterator)a1).hasNext())
+    {
+        a0.a((dq)((java.util.Iterator)a1).next());
+    }
+}
+
+************ PLAY - Clientbound #0x21 ************
+{
+    a0.writeInt(this.a);
+    a0.a(this.b);
+    a0.writeInt(this.c);
+    a0.writeBoolean(this.d);
+}
+
+************ PLAY - Clientbound #0x22 ************
+{
+    a0.writeInt(this.a.c());
+    a0.writeBoolean(this.j);
+    a0.writeFloat(this.b);
+    a0.writeFloat(this.c);
+    a0.writeFloat(this.d);
+    a0.writeFloat(this.e);
+    a0.writeFloat(this.f);
+    a0.writeFloat(this.g);
+    a0.writeFloat(this.h);
+    a0.writeInt(this.i);
+    int i0 = this.a.d();
+    int i1 = 0;
+    while(i1 < i0)
+    {
+        a0.d((this.k[i1] != 0) ? 1 : 0);
+        i1 = i1 + 1;
+    }
+}
+
+************ PLAY - Clientbound #0x23 ************
+{
+    a0.writeInt(this.a);
+    int i = this.c.a();
+    if (this.b)
+    {
+        i = i | 8;
+    }
+    a0.writeByte(i);
+    a0.writeInt(this.d);
+    a0.writeByte(this.e.a());
+    a0.writeByte(this.f);
+    a0.a(this.g.a());
+    a0.writeBoolean(this.h);
+}
+
+************ PLAY - Clientbound #0x24 ************
+{
+    a0.d(this.a);
+    int i0 = this.b;
+    a0.writeByte(i0);
+    a0.writeBoolean(this.c);
+    a0.d(this.d.length);
+    azq[] a1 = this.d;
+    int i1 = a1.length;
+    int i2 = 0;
+    while(i2 < i1)
+    {
+        azq a2 = a1[i2];
+        int i3 = a2.a();
+        int i4 = (i3 & 15) << 4;
+        int i5 = a2.d();
+        a0.writeByte(i4 | i5 & 15);
+        int i6 = a2.b();
+        a0.writeByte(i6);
+        int i7 = a2.c();
+        a0.writeByte(i7);
+        i2 = i2 + 1;
+    }
+    a0.writeByte(this.g);
+    if (this.g > 0)
+    {
+        a0.writeByte(this.h);
+        a0.writeByte(this.e);
+        a0.writeByte(this.f);
+        a0.a(this.i);
+    }
+}
+
+************ PLAY - Clientbound #0x25 ************
+{
+    ((gx)this).b(a);
+    a.writeShort(this.b);
+    a.writeShort(this.c);
+    a.writeShort(this.d);
+    a.writeBoolean(this.g);
+}
+
+************ PLAY - Clientbound #0x26 ************
+{
+    ((gx)this).b(a);
+    a.writeShort(this.b);
+    a.writeShort(this.c);
+    a.writeShort(this.d);
+    int i = this.e;
+    a.writeByte(i);
+    int i0 = this.f;
+    a.writeByte(i0);
+    a.writeBoolean(this.g);
+}
+
+************ PLAY - Clientbound #0x27 ************
+{
+    ((gx)this).b(a);
+    int i = this.e;
+    a.writeByte(i);
+    int i0 = this.f;
+    a.writeByte(i0);
+    a.writeBoolean(this.g);
+}
+
+************ PLAY - Clientbound #0x28 ************
+{
+    a0.d(this.a);
+}
+
+************ PLAY - Clientbound #0x29 ************
+{
+    a0.writeDouble(this.a);
+    a0.writeDouble(this.b);
+    a0.writeDouble(this.c);
+    a0.writeFloat(this.d);
+    a0.writeFloat(this.e);
+}
+
+************ PLAY - Clientbound #0x2a ************
+{
+    a0.a(this.a);
+}
+
+************ PLAY - Clientbound #0x2b ************
+{
+    int i = (this.a()) ? 1 : 0;
+    if (this.b())
+    {
+        i = (byte)(i | 2);
+    }
+    if (this.c())
+    {
+        i = (byte)(i | 4);
+    }
+    if (this.d())
+    {
+        i = (byte)(i | 8);
+    }
+    a0.writeByte(i);
+    a0.writeFloat(this.e);
+    a0.writeFloat(this.f);
+}
+
+************ PLAY - Clientbound #0x2c ************
+{
+    a0.a((Enum)this.a);
+    if (this.a != hb$a.b)
+    {
+        if (this.a == hb$a.c)
+        {
+            a0.d(this.b);
+            a0.writeInt(this.c);
+            a0.a(this.e);
+        }
+    }
+    else
+    {
+        a0.d(this.d);
+        a0.writeInt(this.c);
+    }
+}
+
+************ PLAY - Clientbound #0x2d ************
+{
+    a0.a((Enum)this.a);
+    a0.d(this.b.size());
+    Object a1 = this.b.iterator();
+    while(((java.util.Iterator)a1).hasNext())
+    {
+        hc$b a2 = (hc$b)((java.util.Iterator)a1).next();
+        switch(hc$1.a[this.a.ordinal()]){
+            case 5: {
+                a0.a(a2.a().getId());
+                break;
+            }
+            case 4: {
+                a0.a(a2.a().getId());
+                if (a2.d() != null)
+                {
+                    a0.writeBoolean(true);
+                    a0.a(a2.d());
+                    break;
+                }
+                else
+                {
+                    a0.writeBoolean(false);
+                    break;
+                }
+            }
+            case 3: {
+                a0.a(a2.a().getId());
+                a0.d(a2.b());
+                break;
+            }
+            case 2: {
+                a0.a(a2.a().getId());
+                a0.d(a2.c().a());
+                break;
+            }
+            case 1: {
+                a0.a(a2.a().getId());
+                a0.a(a2.a().getName());
+                a0.d(a2.a().getProperties().size());
+                Object a3 = a2.a().getProperties().values().iterator();
+                while(((java.util.Iterator)a3).hasNext())
+                {
+                    com.mojang.authlib.properties.Property a4 = (com.mojang.authlib.properties.Property)((java.util.Iterator)a3).next();
+                    a0.a(a4.getName());
+                    a0.a(a4.getValue());
+                    if (a4.hasSignature())
+                    {
+                        a0.writeBoolean(true);
+                        a0.a(a4.getSignature());
+                    }
+                    else
+                    {
+                        a0.writeBoolean(false);
+                    }
+                }
+                a0.d(a2.c().a());
+                a0.d(a2.b());
+                if (a2.d() != null)
+                {
+                    a0.writeBoolean(true);
+                    a0.a(a2.d());
+                    break;
+                }
+                else
+                {
+                    a0.writeBoolean(false);
+                    break;
+                }
+            }
+        }
+    }
+}
+
+************ PLAY - Clientbound #0x2e ************
+{
+    a0.writeDouble(this.a);
+    a0.writeDouble(this.b);
+    a0.writeDouble(this.c);
+    a0.writeFloat(this.d);
+    a0.writeFloat(this.e);
+    a0.writeByte(hd$a.a(this.f));
+    a0.d(this.g);
+}
+
+************ PLAY - Clientbound #0x2f ************
+{
+    a0.d(this.a);
+    a0.a(this.b);
+}
+
+************ PLAY - Clientbound #0x30 ************
+{
+    a0.d(this.a.length);
+    int[] a1 = this.a;
+    int i = a1.length;
+    int i0 = 0;
+    while(i0 < i)
+    {
+        a0.d((a1[i0] != 0) ? 1 : 0);
+        i0 = i0 + 1;
+    }
+}
+
+************ PLAY - Clientbound #0x31 ************
+{
+    a0.d(this.a);
+    a0.writeByte(rn.a(this.b));
+}
+
+************ PLAY - Clientbound #0x32 ************
+{
+    a0.a(this.a);
+    a0.a(this.b);
+}
+
+************ PLAY - Clientbound #0x33 ************
+{
+    a0.writeInt(this.a);
+    a0.writeByte(this.b.a());
+    a0.writeByte(this.c.a());
+    a0.a(this.d.a());
+}
+
+************ PLAY - Clientbound #0x34 ************
+{
+    a0.d(this.a);
+    int i = this.b;
+    a0.writeByte(i);
+}
+
+************ PLAY - Clientbound #0x35 ************
+{
+    a0.a((Enum)this.a);
+    switch(hk$1.a[this.a.ordinal()]){
+        case 6: {
+            a0.writeDouble(this.c);
+            a0.writeDouble(this.d);
+            a0.writeDouble(this.f);
+            a0.writeDouble(this.e);
+            a0.b(this.g);
+            a0.d(this.b);
+            a0.d(this.i);
+            a0.d(this.h);
+            break;
+        }
+        case 5: {
+            a0.d(this.h);
+            break;
+        }
+        case 4: {
+            a0.d(this.i);
+            break;
+        }
+        case 3: {
+            a0.writeDouble(this.c);
+            a0.writeDouble(this.d);
+            break;
+        }
+        case 2: {
+            a0.writeDouble(this.f);
+            a0.writeDouble(this.e);
+            a0.b(this.g);
+            break;
+        }
+        case 1: {
+            a0.writeDouble(this.e);
+            break;
+        }
+    }
+}
+
+************ PLAY - Clientbound #0x36 ************
+{
+    a0.d(this.a);
+}
+
+************ PLAY - Clientbound #0x37 ************
+{
+    a0.writeByte(this.a);
+}
+
+************ PLAY - Clientbound #0x38 ************
+{
+    a0.writeByte(this.a);
+    a0.a(this.b);
+}
+
+************ PLAY - Clientbound #0x39 ************
+{
+    a0.d(this.a);
+    kj.a(this.b, a0);
+}
+
+************ PLAY - Clientbound #0x3a ************
+{
+    a0.writeInt(this.a);
+    a0.writeInt(this.b);
+}
+
+************ PLAY - Clientbound #0x3b ************
+{
+    a0.d(this.a);
+    a0.writeShort(this.b);
+    a0.writeShort(this.c);
+    a0.writeShort(this.d);
+}
+
+************ PLAY - Clientbound #0x3c ************
+{
+    a0.d(this.a);
+    a0.a((Enum)this.b);
+    a0.a(this.c);
+}
+
+************ PLAY - Clientbound #0x3d ************
+{
+    a0.writeFloat(this.a);
+    a0.d(this.c);
+    a0.d(this.b);
+}
+
+************ PLAY - Clientbound #0x3e ************
+{
+    a0.writeFloat(this.a);
+    a0.d(this.b);
+    a0.writeFloat(this.c);
+}
+
+************ PLAY - Clientbound #0x3f ************
+{
+    a0.a(this.a);
+    a0.writeByte(this.d);
+    int i = this.d;
+    label0: {
+        label1: {
+            if (i == 0)
+            {
+                break label1;
+            }
+            if (this.d != 2)
+            {
+                break label0;
+            }
+        }
+        a0.a(this.b);
+        a0.a(this.c.a());
+    }
+}
+
+************ PLAY - Clientbound #0x40 ************
+{
+    a0.d(this.a);
+    a0.a(this.b);
+}
+
+************ PLAY - Clientbound #0x41 ************
+{
+    a0.a(this.a);
+    a0.writeByte(this.i);
+    int i0 = this.i;
+    label2: {
+        label3: {
+            if (i0 == 0)
+            {
+                break label3;
+            }
+            if (this.i != 2)
+            {
+                break label2;
+            }
+        }
+        a0.a(this.b);
+        a0.a(this.c);
+        a0.a(this.d);
+        a0.writeByte(this.j);
+        a0.a(this.e);
+        a0.a(this.f);
+        a0.writeByte(this.g);
+    }
+    int i1 = this.i;
+    label0: {
+        label1: {
+            if (i1 == 0)
+            {
+                break label1;
+            }
+            if (this.i == 3)
+            {
+                break label1;
+            }
+            if (this.i != 4)
+            {
+                break label0;
+            }
+        }
+        a0.d(this.h.size());
+        Object a1 = this.h.iterator();
+        while(((java.util.Iterator)a1).hasNext())
+        {
+            a0.a((String)((java.util.Iterator)a1).next());
+        }
+    }
+}
+
+************ PLAY - Clientbound #0x42 ************
+{
+    a0.a(this.a);
+    a0.a((Enum)this.d);
+    a0.a(this.b);
+    if (this.d != hx$a.b)
+    {
+        a0.d(this.c);
+    }
+}
+
+************ PLAY - Clientbound #0x43 ************
+{
+    a0.a(this.a);
+}
+
+************ PLAY - Clientbound #0x44 ************
+{
+    a0.writeLong(this.a);
+    a0.writeLong(this.b);
+}
+
+************ PLAY - Clientbound #0x45 ************
+{
+    a0.a((Enum)this.a);
+    ia$a a1 = this.a;
+    ia$a a2 = ia$a.a;
+    label0: {
+        label1: {
+            if (a1 == a2)
+            {
+                break label1;
+            }
+            if (this.a != ia$a.b)
+            {
+                break label0;
+            }
+        }
+        a0.a(this.b);
+    }
+    if (this.a == ia$a.c)
+    {
+        a0.writeInt(this.c);
+        a0.writeInt(this.d);
+        a0.writeInt(this.e);
+    }
+}
+
+************ PLAY - Clientbound #0x46 ************
+{
+    a0.d(nh.a.a((Object)this.a));
+    a0.a((Enum)this.b);
+    a0.writeInt(this.c);
+    a0.writeInt(this.d);
+    a0.writeInt(this.e);
+    a0.writeFloat(this.f);
+    a0.writeFloat(this.g);
+}
+
+************ PLAY - Clientbound #0x47 ************
+{
+    a0.a(this.a);
+    a0.a(this.b);
+}
+
+************ PLAY - Clientbound #0x48 ************
+{
+    a0.d(this.a);
+    a0.d(this.b);
+}
+
+************ PLAY - Clientbound #0x49 ************
+{
+    a0.d(this.a);
+    a0.writeDouble(this.b);
+    a0.writeDouble(this.c);
+    a0.writeDouble(this.d);
+    int i = this.e;
+    a0.writeByte(i);
+    int i0 = this.f;
+    a0.writeByte(i0);
+    a0.writeBoolean(this.g);
+}
+
+************ PLAY - Clientbound #0x4a ************
+{
+    a0.d(this.a);
+    a0.writeInt(this.b.size());
+    Object a1 = this.b.iterator();
+    while(((java.util.Iterator)a1).hasNext())
+    {
+        ig$a a2 = (ig$a)((java.util.Iterator)a1).next();
+        a0.a(a2.a());
+        a0.writeDouble(a2.b());
+        a0.d(a2.c().size());
+        Object a3 = a2.c().iterator();
+        while(((java.util.Iterator)a3).hasNext())
+        {
+            ss a4 = (ss)((java.util.Iterator)a3).next();
+            a0.a(a4.a());
+            a0.writeDouble(a4.d());
+            a0.writeByte(a4.c());
+        }
+    }
+}
+
+************ PLAY - Clientbound #0x4b ************
+{
+    a0.d(this.a);
+    int i = this.b;
+    a0.writeByte(i);
+    int i0 = this.c;
+    a0.writeByte(i0);
+    a0.d(this.d);
+    int i1 = this.e;
+    a0.writeByte(i1);
+}
+
+############## SERVERBOUND PACKETS ##############
+
+************ PLAY - Serverbound #0x0 ************
+{
+    a0.d(this.a);
+}
+
+************ PLAY - Serverbound #0x1 ************
+{
+    a0.a(org.apache.commons.lang3.StringUtils.substring(this.a, 0, 32767));
+    a0.writeBoolean(this.b);
+    boolean b0 = this.c != null;
+    a0.writeBoolean(b0);
+    if (b0)
+    {
+        a0.a(this.c);
+    }
+}
+
+************ PLAY - Serverbound #0x2 ************
+{
+    a0.a(this.a);
+}
+
+************ PLAY - Serverbound #0x3 ************
+{
+    a0.a((Enum)this.a);
+}
+
+************ PLAY - Serverbound #0x4 ************
+{
+    a0.a(this.a);
+    a0.writeByte(this.b);
+    a0.a((Enum)this.c);
+    a0.writeBoolean(this.d);
+    a0.writeByte(this.e);
+    a0.a((Enum)this.f);
+}
+
+************ PLAY - Serverbound #0x5 ************
+{
+    a0.writeByte(this.a);
+    int i = this.b;
+    a0.writeShort(i);
+    a0.writeByte((this.c) ? 1 : 0);
+}
+
+************ PLAY - Serverbound #0x6 ************
+{
+    a0.writeByte(this.a);
+    a0.writeByte(this.b);
+}
+
+************ PLAY - Serverbound #0x7 ************
+{
+    a0.writeByte(this.a);
+    a0.writeShort(this.b);
+    a0.writeByte(this.c);
+    int i = this.d;
+    a0.writeShort(i);
+    a0.a((Enum)this.f);
+    a0.a(this.e);
+}
+
+************ PLAY - Serverbound #0x8 ************
+{
+    a0.writeByte(this.a);
+}
+
+************ PLAY - Serverbound #0x9 ************
+{
+    a0.a(this.a);
+    a0.writeBytes((io.netty.buffer.ByteBuf)this.b);
+}
+
+************ PLAY - Serverbound #0xa ************
+{
+    a0.d(this.a);
+    a0.a((Enum)this.b);
+    if (this.b == it$a.c)
+    {
+        a0.writeFloat((float)this.c.b);
+        a0.writeFloat((float)this.c.c);
+        a0.writeFloat((float)this.c.d);
+    }
+    it$a a1 = this.b;
+    it$a a2 = it$a.a;
+    label0: {
+        label1: {
+            if (a1 == a2)
+            {
+                break label1;
+            }
+            if (this.b != it$a.c)
+            {
+                break label0;
+            }
+        }
+        a0.a((Enum)this.d);
+    }
+}
+
+************ PLAY - Serverbound #0xb ************
+{
+    a0.d(this.a);
+}
+
+************ PLAY - Serverbound #0xc ************
+{
+    a.writeDouble(this.a);
+    a.writeDouble(this.b);
+    a.writeDouble(this.c);
+    ((iv)this).b(a);
+}
+
+************ PLAY - Serverbound #0xd ************
+{
+    a.writeDouble(this.a);
+    a.writeDouble(this.b);
+    a.writeDouble(this.c);
+    a.writeFloat(this.d);
+    a.writeFloat(this.e);
+    ((iv)this).b(a);
+}
+
+************ PLAY - Serverbound #0xe ************
+{
+    a.writeFloat(this.d);
+    a.writeFloat(this.e);
+    ((iv)this).b(a);
+}
+
+************ PLAY - Serverbound #0xf ************
+{
+    a0.writeByte((this.f) ? 1 : 0);
+}
+
+************ PLAY - Serverbound #0x10 ************
+{
+    a0.writeDouble(this.a);
+    a0.writeDouble(this.b);
+    a0.writeDouble(this.c);
+    a0.writeFloat(this.d);
+    a0.writeFloat(this.e);
+}
+
+************ PLAY - Serverbound #0x11 ************
+{
+    a0.writeBoolean(this.a);
+    a0.writeBoolean(this.b);
+}
+
+************ PLAY - Serverbound #0x12 ************
+{
+    int i = (this.a()) ? 1 : 0;
+    if (this.b())
+    {
+        i = (byte)(i | 2);
+    }
+    if (this.c())
+    {
+        i = (byte)(i | 4);
+    }
+    if (this.d())
+    {
+        i = (byte)(i | 8);
+    }
+    a0.writeByte(i);
+    a0.writeFloat(this.e);
+    a0.writeFloat(this.f);
+}
+
+************ PLAY - Serverbound #0x13 ************
+{
+    a0.a((Enum)this.c);
+    a0.a(this.a);
+    a0.writeByte(this.b.a());
+}
+
+************ PLAY - Serverbound #0x14 ************
+{
+    a0.d(this.a);
+    a0.a((Enum)this.b);
+    a0.d(this.c);
+}
+
+************ PLAY - Serverbound #0x15 ************
+{
+    a0.writeFloat(this.a);
+    a0.writeFloat(this.b);
+    int i = (this.c) ? 1 : 0;
+    if (this.d)
+    {
+        i = (byte)(i | 2);
+    }
+    a0.writeByte(i);
+}
+
+************ PLAY - Serverbound #0x16 ************
+{
+    a0.a(this.a);
+    a0.a((Enum)this.b);
+}
+
+************ PLAY - Serverbound #0x17 ************
+{
+    a0.writeShort(this.a);
+}
+
+************ PLAY - Serverbound #0x18 ************
+{
+    a0.writeShort(this.a);
+    a0.a(this.b);
+}
+
+************ PLAY - Serverbound #0x19 ************
+{
+    a0.a(this.a);
+    int i = 0;
+    while(i < 4)
+    {
+        a0.a(this.b[i]);
+        i = i + 1;
+    }
+}
+
+************ PLAY - Serverbound #0x1a ************
+{
+    a0.a((Enum)this.a);
+}
+
+************ PLAY - Serverbound #0x1b ************
+{
+    a0.a(this.a);
+}
+
+************ PLAY - Serverbound #0x1c ************
+{
+    a0.a(this.a);
+    a0.a((Enum)this.b);
+    a0.a((Enum)this.c);
+    a0.writeByte((int)(this.d * 16f));
+    a0.writeByte((int)(this.e * 16f));
+    a0.writeByte((int)(this.f * 16f));
+}
+
+************ PLAY - Serverbound #0x1d ************
+{
+    a0.a((Enum)this.a);
+}
+
+
+############## ENTITY INFO ##############
+[
+    {
+        "id": 1,
+        "metadata": [
+            "com.google.common.base.Optional"
+        ],
+        "name": "Item"
+    },
+    {
+        "id": 2,
+        "metadata": [],
+        "name": "XPOrb"
+    },
+    {
+        "id": 3,
+        "metadata": [
+            "Float",
+            "Integer",
+            "Boolean",
+            "Integer"
+        ],
+        "name": "AreaEffectCloud"
+    },
+    {
+        "id": 7,
+        "metadata": [],
+        "name": "ThrownEgg"
+    },
+    {
+        "id": 8,
+        "metadata": [],
+        "name": "LeashKnot"
+    },
+    {
+        "id": 9,
+        "metadata": [],
+        "name": "Painting"
+    },
+    {
+        "id": 10,
+        "metadata": [
+            "Integer"
+        ],
+        "name": "Arrow"
+    },
+    {
+        "id": 11,
+        "metadata": [],
+        "name": "Snowball"
+    },
+    {
+        "id": 12,
+        "metadata": [],
+        "name": "Fireball"
+    },
+    {
+        "id": 13,
+        "metadata": [],
+        "name": "SmallFireball"
+    },
+    {
+        "id": 14,
+        "metadata": [],
+        "name": "ThrownEnderpearl"
+    },
+    {
+        "id": 15,
+        "metadata": [],
+        "name": "EyeOfEnderSignal"
+    },
+    {
+        "id": 16,
+        "metadata": [],
+        "name": "ThrownPotion"
+    },
+    {
+        "id": 17,
+        "metadata": [],
+        "name": "ThrownExpBottle"
+    },
+    {
+        "id": 18,
+        "metadata": [
+            "com.google.common.base.Optional",
+            "Integer"
+        ],
+        "name": "ItemFrame"
+    },
+    {
+        "id": 19,
+        "metadata": [
+            "Boolean"
+        ],
+        "name": "WitherSkull"
+    },
+    {
+        "id": 20,
+        "metadata": [
+            "Integer"
+        ],
+        "name": "PrimedTnt"
+    },
+    {
+        "id": 21,
+        "metadata": [
+            "cl"
+        ],
+        "name": "FallingSand"
+    },
+    {
+        "id": 22,
+        "metadata": [
+            "com.google.common.base.Optional"
+        ],
+        "name": "FireworksRocketEntity"
+    },
+    {
+        "id": 24,
+        "metadata": [],
+        "name": "SpectralArrow"
+    },
+    {
+        "id": 25,
+        "metadata": [],
+        "name": "ShulkerBullet"
+    },
+    {
+        "id": 26,
+        "metadata": [],
+        "name": "DragonFireball"
+    },
+    {
+        "id": 30,
+        "metadata": [
+            "Byte",
+            "de",
+            "de",
+            "de",
+            "de",
+            "de",
+            "de"
+        ],
+        "name": "ArmorStand"
+    },
+    {
+        "id": 41,
+        "metadata": [
+            "Integer",
+            "Integer",
+            "Float",
+            "Integer",
+            "Boolean",
+            "Boolean"
+        ],
+        "name": "Boat"
+    },
+    {
+        "id": 42,
+        "metadata": [],
+        "name": "aap$a.a.b()"
+    },
+    {
+        "id": 43,
+        "metadata": [],
+        "name": "aap$a.b.b()"
+    },
+    {
+        "id": 44,
+        "metadata": [
+            "Boolean"
+        ],
+        "name": "aap$a.c.b()"
+    },
+    {
+        "id": 45,
+        "metadata": [],
+        "name": "aap$a.d.b()"
+    },
+    {
+        "id": 46,
+        "metadata": [],
+        "name": "aap$a.f.b()"
+    },
+    {
+        "id": 47,
+        "metadata": [],
+        "name": "aap$a.e.b()"
+    },
+    {
+        "id": 40,
+        "metadata": [
+            "String",
+            "ex"
+        ],
+        "name": "aap$a.g.b()"
+    },
+    {
+        "id": 48,
+        "metadata": [
+            "Byte"
+        ],
+        "name": "Mob"
+    },
+    {
+        "id": 49,
+        "metadata": [],
+        "name": "Monster"
+    },
+    {
+        "id": 50,
+        "metadata": [
+            "Integer",
+            "Boolean",
+            "Boolean"
+        ],
+        "name": "Creeper"
+    },
+    {
+        "id": 51,
+        "metadata": [
+            "Integer",
+            "Boolean"
+        ],
+        "name": "Skeleton"
+    },
+    {
+        "id": 52,
+        "metadata": [
+            "Byte"
+        ],
+        "name": "Spider"
+    },
+    {
+        "id": 53,
+        "metadata": [],
+        "name": "Giant"
+    },
+    {
+        "id": 54,
+        "metadata": [
+            "Boolean",
+            "Integer",
+            "Boolean",
+            "Boolean"
+        ],
+        "name": "Zombie"
+    },
+    {
+        "id": 55,
+        "metadata": [
+            "Integer"
+        ],
+        "name": "Slime"
+    },
+    {
+        "id": 56,
+        "metadata": [
+            "Boolean"
+        ],
+        "name": "Ghast"
+    },
+    {
+        "id": 57,
+        "metadata": [],
+        "name": "PigZombie"
+    },
+    {
+        "id": 58,
+        "metadata": [
+            "com.google.common.base.Optional",
+            "Boolean"
+        ],
+        "name": "Enderman"
+    },
+    {
+        "id": 59,
+        "metadata": [],
+        "name": "CaveSpider"
+    },
+    {
+        "id": 60,
+        "metadata": [],
+        "name": "Silverfish"
+    },
+    {
+        "id": 61,
+        "metadata": [
+            "Byte"
+        ],
+        "name": "Blaze"
+    },
+    {
+        "id": 62,
+        "metadata": [],
+        "name": "LavaSlime"
+    },
+    {
+        "id": 63,
+        "metadata": [
+            "Integer"
+        ],
+        "name": "EnderDragon"
+    },
+    {
+        "id": 64,
+        "metadata": [
+            "Integer",
+            "Integer",
+            "Integer",
+            "Integer"
+        ],
+        "name": "WitherBoss"
+    },
+    {
+        "id": 65,
+        "metadata": [
+            "Byte"
+        ],
+        "name": "Bat"
+    },
+    {
+        "id": 66,
+        "metadata": [
+            "Boolean"
+        ],
+        "name": "Witch"
+    },
+    {
+        "id": 67,
+        "metadata": [],
+        "name": "Endermite"
+    },
+    {
+        "id": 68,
+        "metadata": [
+            "Byte",
+            "Integer"
+        ],
+        "name": "Guardian"
+    },
+    {
+        "id": 69,
+        "metadata": [
+            "cs",
+            "com.google.common.base.Optional",
+            "Byte"
+        ],
+        "name": "Shulker"
+    },
+    {
+        "id": 90,
+        "metadata": [
+            "Boolean"
+        ],
+        "name": "Pig"
+    },
+    {
+        "id": 91,
+        "metadata": [
+            "Byte"
+        ],
+        "name": "Sheep"
+    },
+    {
+        "id": 92,
+        "metadata": [],
+        "name": "Cow"
+    },
+    {
+        "id": 93,
+        "metadata": [],
+        "name": "Chicken"
+    },
+    {
+        "id": 94,
+        "metadata": [],
+        "name": "Squid"
+    },
+    {
+        "id": 95,
+        "metadata": [
+            "Float",
+            "Boolean",
+            "Integer"
+        ],
+        "name": "Wolf"
+    },
+    {
+        "id": 96,
+        "metadata": [],
+        "name": "MushroomCow"
+    },
+    {
+        "id": 97,
+        "metadata": [
+            "Byte"
+        ],
+        "name": "SnowMan"
+    },
+    {
+        "id": 98,
+        "metadata": [
+            "Integer"
+        ],
+        "name": "Ozelot"
+    },
+    {
+        "id": 99,
+        "metadata": [
+            "Byte"
+        ],
+        "name": "VillagerGolem"
+    },
+    {
+        "id": 100,
+        "metadata": [
+            "Byte",
+            "Integer",
+            "Integer",
+            "com.google.common.base.Optional",
+            "Integer"
+        ],
+        "name": "EntityHorse"
+    },
+    {
+        "id": 101,
+        "metadata": [
+            "Integer"
+        ],
+        "name": "Rabbit"
+    },
+    {
+        "id": 102,
+        "metadata": [
+            "Boolean"
+        ],
+        "name": "PolarBear"
+    },
+    {
+        "id": 120,
+        "metadata": [
+            "Integer"
+        ],
+        "name": "Villager"
+    },
+    {
+        "id": 200,
+        "metadata": [
+            "com.google.common.base.Optional",
+            "Boolean"
+        ],
+        "name": "EnderCrystal"
+    }
+]
