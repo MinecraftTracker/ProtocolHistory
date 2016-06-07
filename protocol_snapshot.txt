@@ -1,5 +1,5 @@
-Minecraft version: 1.10-pre1
-Protocol version: 204
+Minecraft version: 1.10-pre2
+Protocol version: 205
 
 ############## CLIENTBOUND PACKETS ##############
 
@@ -118,13 +118,13 @@ Protocol version: 204
     a0.a(this.a);
     a0.writeByte(this.b);
     a0.writeByte(this.c);
-    a0.d(akg.a(this.d) & 4095);
+    a0.d(akf.a(this.d) & 4095);
 }
 
 ************ PLAY - Clientbound #0xb ************
 {
     a0.a(this.a);
-    a0.d(akg.i.a((Object)this.b));
+    a0.d(akf.i.a((Object)this.b));
 }
 
 ************ PLAY - Clientbound #0xc ************
@@ -201,7 +201,7 @@ Protocol version: 204
         gd$a a2 = a1[i0];
         int i1 = a2.b();
         a0.writeShort(i1);
-        a0.d(akg.i.a((Object)a2.c()));
+        a0.d(akf.i.a((Object)a2.c()));
         i0 = i0 + 1;
     }
 }
@@ -235,7 +235,7 @@ Protocol version: 204
 {
     a0.writeByte(this.a);
     a0.writeShort(this.b.length);
-    aea[] a1 = this.b;
+    adz[] a1 = this.b;
     int i = a1.length;
     int i0 = 0;
     while(i0 < i)
@@ -261,7 +261,7 @@ Protocol version: 204
 
 ************ PLAY - Clientbound #0x17 ************
 {
-    a0.d(ady.a(this.a));
+    a0.d(adx.a(this.a));
     a0.d(this.b);
 }
 
@@ -405,12 +405,12 @@ Protocol version: 204
     a0.writeByte(i0);
     a0.writeBoolean(this.c);
     a0.d(this.d.length);
-    azs[] a1 = this.d;
+    azr[] a1 = this.d;
     int i1 = a1.length;
     int i2 = 0;
     while(i2 < i1)
     {
-        azs a2 = a1[i2];
+        azr a2 = a1[i2];
         int i3 = a2.a();
         int i4 = (i3 & 15) << 4;
         int i5 = a2.d();
@@ -925,7 +925,7 @@ Protocol version: 204
         Object a3 = a2.c().iterator();
         while(((java.util.Iterator)a3).hasNext())
         {
-            su a4 = (su)((java.util.Iterator)a3).next();
+            st a4 = (st)((java.util.Iterator)a3).next();
             a0.a(a4.a());
             a0.writeDouble(a4.d());
             a0.writeByte(a4.c());
@@ -1358,34 +1358,34 @@ Protocol version: 204
     {
         "id": 42,
         "metadata": [],
-        "name": "aar$a.a.b()"
+        "name": "aaq$a.a.b()"
     },
     {
         "id": 43,
         "metadata": [],
-        "name": "aar$a.b.b()"
+        "name": "aaq$a.b.b()"
     },
     {
         "id": 44,
         "metadata": [
             "Boolean"
         ],
-        "name": "aar$a.c.b()"
+        "name": "aaq$a.c.b()"
     },
     {
         "id": 45,
         "metadata": [],
-        "name": "aar$a.d.b()"
+        "name": "aaq$a.d.b()"
     },
     {
         "id": 46,
         "metadata": [],
-        "name": "aar$a.f.b()"
+        "name": "aaq$a.f.b()"
     },
     {
         "id": 47,
         "metadata": [],
-        "name": "aar$a.e.b()"
+        "name": "aaq$a.e.b()"
     },
     {
         "id": 40,
@@ -1393,7 +1393,7 @@ Protocol version: 204
             "String",
             "ey"
         ],
-        "name": "aar$a.g.b()"
+        "name": "aaq$a.g.b()"
     },
     {
         "id": 48,
