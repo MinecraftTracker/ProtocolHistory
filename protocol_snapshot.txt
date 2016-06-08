@@ -1,5 +1,5 @@
-Minecraft version: 1.10-pre2
-Protocol version: 205
+Minecraft version: 1.10
+Protocol version: 210
 
 ############## CLIENTBOUND PACKETS ##############
 
