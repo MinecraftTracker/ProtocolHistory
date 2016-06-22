@@ -1,4 +1,4 @@
-Minecraft version: 1.10
+Minecraft version: 1.10.1
 Protocol version: 210
 
 ############## CLIENTBOUND PACKETS ##############
@@ -1271,7 +1271,9 @@ Protocol version: 210
     },
     {
         "id": 16,
-        "metadata": [],
+        "metadata": [
+            "com.google.common.base.Optional"
+        ],
         "name": "ThrownPotion"
     },
     {
