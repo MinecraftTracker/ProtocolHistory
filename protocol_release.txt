@@ -1,4 +1,4 @@
-Minecraft version: 1.10.1
+Minecraft version: 1.10.2
 Protocol version: 210
 
 ############## CLIENTBOUND PACKETS ##############
